@@ -44,7 +44,7 @@ const HomeComponent = () => {
         {
             state.Status === 'Error' ? <Text style={{margin: 8}}>No Records Found</Text> : <FlatList style={{ marginLeft: 8, marginRight: 8, marginTop: 8 }} data={state.PostOffice} keyExtractor={(data) => { data.Name + " " + data.Pincode }} renderItem={({ item }) => {
 
-                return <View style={{ backgroundColor: '#FFFFFF', padding: 5, marginTop: 5 }}>
+                return <View style={{ backgroundColor: '#FFFFFF', paddingLeft: 8, paddingTop: 10, paddingRight: 8, paddingBottom: 10, marginTop: 5 }}>
                     <View style={{ flexDirection: 'row' }}>
                         <Text>Name:</Text>
                         <Text style={{ marginLeft: 8, fontWeight: '600' }}>{item.Name}</Text>
